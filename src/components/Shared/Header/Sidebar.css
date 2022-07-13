@@ -1,0 +1,48 @@
+.sidebar {
+    position: fixed;
+    /* position: absolute; */
+    background-color: rgb(126, 105, 243);
+    color: black;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+
+
+    /* translate */
+    transform: translateX(-100%);
+    transition: all 0.4s;
+
+    /* scrollbar */
+    overflow: auto;
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+
+
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 1rem 2rem;
+    border-bottom: solid 1px black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 300;
+}
+
+.sidebar li:hover {
+    background-color: #fff;
+    border-radius: 0px 30px 30px 0px;
+}
+
+/* advance */
+.sidebar--open {
+    transform: translateX(0%);
+}
+
+.sidebar--open ul {
+    margin-left: 0;
+    margin: 10px 20px 10px 0px;
+    /* padding: 5px; */
+}
