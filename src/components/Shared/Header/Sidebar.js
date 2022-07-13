@@ -4,7 +4,7 @@ import './Sidebar.css';
 const Sidebar = ({ sidebar, toggleSidebar }) => {
     return (
         <nav className={sidebar ? 'sidebar sidebar--open' : 'sidebar'}>
-            <ul>
+            <ul className='nav-link-container'>
                 <li onClick={toggleSidebar}>
                     <a href="https://www.google.com/" target={"_blank"}>
                         <i class="fas fa-home"></i>Home
